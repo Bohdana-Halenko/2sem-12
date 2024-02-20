@@ -51,4 +51,29 @@ img {
   .container {
     width: 1200px;
   }
+}
+.box__title {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 146%;
+  text-align: center;
+  color: var(rgba(50, 50, 50, 0.1960784314));
+}
+.box__sub-title {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 158%;
+  text-align: center;
+  color: grey;
+}
+.box__button {
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  color: #4985FF;
+  border-left: 50%;
+  border-right: 50%;
 }/*# sourceMappingURL=main.css.map */
