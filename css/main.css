@@ -70,10 +70,12 @@ img {
   color: grey;
 }
 .box__button {
-  text-align: center;
   width: 200px;
   height: 45px;
-  color: #4985FF;
-  border-left: 50%;
-  border-right: 50%;
+  background-color: #4985FF;
+  border: 1px solid white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }/*# sourceMappingURL=main.css.map */
