@@ -1,1 +1,161 @@
 // 3-я секція
+.work {
+    position: relative;
+    padding-top: 40px;
+    border-bottom: 1px solid $button-color;
+
+    &__background {
+        background-image: $background-gradient;
+        width: 100%;
+        height: 400px;
+    }
+
+    &__wrap {
+        position: relative;
+        bottom: 380px;
+        padding-bottom: -340px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 146%;
+        text-align: center;
+        color: $primary-text-color;
+    }
+
+    &__item {
+        margin-top: 40px;
+    }
+
+    &__item:first-child,
+    &__item:last-child {
+        display: none;
+    }
+
+    &__img-wrap {
+        width: 290px;
+    }
+
+    &__item-title {
+        font-weight: 600;
+        font-size: 16px;
+        color: $second-title;
+        padding-top: 20px;
+    }
+
+    &__number {
+        font-weight: 600;
+        font-size: 16px;
+        color: $AccentColor;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 158%;
+        color: $text-color;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        width: 301px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $button-color;
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    &__btn {
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: $primary-text-color;
+        padding: 15px 46px;
+        background: $button-color;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__btn:hover {
+        color: $button-color;
+        background: none;
+        border: 1px solid $button-color;
+    }
+}
+
+@media screen and (min-width:480px) {
+    .work {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .work {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        &__title {
+            text-align: left;
+            padding-top: 70px;
+        }
+
+        &__btn-wrap {
+            position: absolute;
+            bottom: 950px;
+            left: 530px;
+            padding-right: 0;
+        }
+
+        &__item:first-child,
+        &__item:last-child {
+            display: block;
+        }
+
+        &__item:nth-child(odd) {
+            margin-right: 55px;
+        }
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .work {
+        &__list {
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        &__item:last-child {
+            display: none;
+        }
+
+        &__item:nth-child(even) {
+            margin-right: 55px;
+        }
+
+        &__btn-wrap {
+            bottom: 470px;
+            right: -220px;
+        }
+    }
+}
