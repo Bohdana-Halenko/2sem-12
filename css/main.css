@@ -82,7 +82,6 @@ img {
   border-bottom-right-radius: 25px;
 }
 
-<<<<<<< HEAD
 .box__title {
   margin-top: 100px;
   margin-bottom: 32px;
@@ -214,7 +213,8 @@ img {
   margin-right: 10px;
   width: 30px;
   height: 28px;
-=======
+}
+
 .work {
   position: relative;
   padding-top: 40px;
@@ -463,5 +463,7 @@ img {
   .video__mini-film {
     top: 70px;
   }
->>>>>>> 583b44b71afd3b2f7a1ad92613caf5e523cf11c9
+}
+.footer {
+  padding-top: 40px;
 }/*# sourceMappingURL=main.css.map */
