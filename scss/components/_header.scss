@@ -1,4 +1,4 @@
-// великий хедер
+// великий хедер Давід
 
 @media screen and (min-width: 1200px) {
   .header__list {
@@ -6,7 +6,7 @@
     order: 1;
     display: flex;
     margin-bottom: 40px;
-    margin-left: 602px;
+    justify-content: flex-end;
   }
   .header__nav {
     order: 1;
@@ -16,7 +16,7 @@
     color: $primary-text-color;
     font-weight: 500;
     font-size: 16px;
-    margin-right: 40px;
+    margin-left: 40px;
     &:hover{
         color: #dadada;
     }
@@ -36,9 +36,13 @@
     }
   }
   .header{
-    background-color: gray;
+    background-image: url(./../../img/header/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 40px;
     padding-bottom: 335px;
+    font-family: "Montserrat", sans-serif;
   }
   .header__text {
     font-weight: 500;
