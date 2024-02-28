@@ -1,4 +1,10 @@
 // Діма
 .footer{
     padding-top: 40px;
+    background-color: $background-benefits;
+}
+.footer__icon{
+    width: 20px;
+    height: 20px;
+    fill: $text-color;
 }
