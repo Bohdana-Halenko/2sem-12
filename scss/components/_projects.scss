@@ -1,1 +1,61 @@
-// 4-та секція проекти
+// Артур
+.projects__img { 
+    border-radius: 10px; 
+    width: 255px; 
+    height: 255px; 
+} 
+ 
+.projects__title { 
+    padding-bottom: 13px; 
+    font-weight: 700; 
+    font-size: 36px; 
+    line-height: 146%; 
+    text-align: center; 
+    color: $subtitle-color; 
+} 
+ 
+.projects__text { 
+    padding-bottom: 20px; 
+    font-weight: 400; 
+    font-size: 16px; 
+    line-height: 158%; 
+    text-align: center; 
+    color: $text-color; 
+} 
+ 
+.projects__list { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+ 
+.projects__btn { 
+    border: 1px; 
+    border-radius: 30px; 
+    width: 200px; 
+    height: 45px; 
+    cursor: pointer; 
+    box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25); 
+    background-color: $button-color; 
+    font-weight: 500; 
+    font-size: 16px; 
+    text-align: center; 
+    color: $primary-text-color; 
+} 
+ 
+.projects__button{ 
+    padding-top: 40px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+ 
+.projects{ 
+    padding-top: 94px; 
+    padding-bottom: 94px; 
+    background: $background-benefits; 
+} 
+.projects__btn:hover{ 
+    background-color: $primary-text-color; 
+    color: $subtitle-color; 
+}
