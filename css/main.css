@@ -244,6 +244,10 @@ img {
   height: 400px;
   border-radius: 30px;
 }
+.standard__link {
+  cursor: pointer;
+  color: blue;
+}
 
 .line {
   margin-top: 142px;
@@ -282,7 +286,8 @@ img {
   margin-right: 10px;
   width: 30px;
   height: 28px;
-=======
+}
+
 .work {
   position: relative;
   padding-top: 40px;
