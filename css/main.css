@@ -150,18 +150,26 @@ img {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
-  .create__list {
+  .box__sub-title {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 158%;
+    text-align: center;
+    color: grey;
+  }
+  .box .create__list {
     margin-top: 70px;
     display: flex;
     justify-content: space-around;
   }
-  .create__title {
+  .box .create__title {
     font-family: "Montserrat";
     font-weight: 600;
     font-size: 18px;
     color: #000;
   }
-  .create__sub-title {
+  .box .create__sub-title {
     margin-top: 12px;
     font-family: "Montserrat";
     font-weight: 400;
@@ -169,19 +177,19 @@ img {
     line-height: 158%;
     color: grey;
   }
-  .create__wrap {
+  .box .create__wrap {
     padding-top: 28px;
   }
-  .create__item {
+  .box .create__item {
     display: flex;
     flex-wrap: wrap;
   }
-  .create__image {
+  .box .create__image {
     padding-right: 40px;
     width: 110px;
     height: 110px;
   }
-  .create__button {
+  .box .create__button {
     cursor: pointer;
     margin-top: 55px;
     margin-bottom: 105px;
@@ -193,7 +201,7 @@ img {
     color: white;
     border-radius: 25px;
   }
-  .create__link {
+  .box .create__link {
     color: white;
     font-family: "Montserrat";
     font-weight: 500;
@@ -313,6 +321,45 @@ img {
 .standard__link {
   cursor: pointer;
   color: blue;
+}
+
+.line {
+  margin-top: 142px;
+  border: 1px solid lightgray;
+  width: 1110px;
+  height: 0px;
+}
+
+.bottom__list {
+  flex-wrap: wrap;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bottom__item {
+  display: flex;
+}
+.bottom__title {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 146%;
+  color: #000;
+}
+.bottom__sub-title {
+  position: relative;
+  right: 40px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 158%;
+  color: grey;
+}
+.bottom__image {
+  margin-top: 12px;
+  margin-right: 10px;
+  width: 30px;
+  height: 28px;
 }
 
 .line {
