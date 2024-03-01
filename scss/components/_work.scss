@@ -3,17 +3,10 @@
     position: relative;
     padding-top: 40px;
     border-bottom: 1px solid $button-color;
+    background-color: $background-gradient; 
 
-    &__background {
-        background-image: $background-gradient;
-        width: 100%;
-        height: 400px;
-    }
-
-    &__wrap {
-        position: relative;
-        bottom: 380px;
-        padding-bottom: -340px;
+    &__subtitle{
+        margin-top: 30px;
     }
 
     &__title {
@@ -28,10 +21,10 @@
         margin-top: 40px;
     }
 
-    &__item:first-child,
-    &__item:last-child {
-        display: none;
-    }
+    // &__item:first-child,
+    // &__item:last-child {
+    //     display: none;
+    // }
 
     &__img-wrap {
         width: 290px;
@@ -49,17 +42,38 @@
         font-size: 16px;
         color: $button-color;
     }
-
+    &__span{
+      color:$button-color ;  
+      font-size: 18px;
+    }
+    &__links{
+        color: $button-color;
+    }
     &__text {
         font-weight: 400;
         font-size: 14px;
         line-height: 158%;
         color: $text-color;
-        padding-top: 20px;
-        padding-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 47px;
         width: 301px;
     }
-
+    &__btn { 
+        border: 1px; 
+        border-radius: 30px; 
+        width: 200px; 
+        height: 45px; 
+        cursor: pointer; 
+        box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25); 
+        background-color: $button-color; 
+        font-weight: 500; 
+        font-size: 16px; 
+        text-align: center; 
+        color: $primary-text-color; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &__link {
         font-weight: 500;
         font-size: 16px;
@@ -143,10 +157,6 @@
         &__list {
             flex-wrap: nowrap;
             justify-content: center;
-        }
-
-        &__item:last-child {
-            display: none;
         }
 
         &__item:nth-child(even) {
