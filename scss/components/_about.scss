@@ -1,3 +1,47 @@
+<<<<<<< HEAD
+
+@media screen and (min-width:  480px) {
+    .br-desktop{
+        display: none;
+    }
+    
+    .box{
+
+        &__title{
+            margin-top: 100px;
+            margin-bottom: 32px;
+            text-align: center;
+            font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 146%;
+    text-align: center;
+           color: var($second-title);
+     
+    
+        }
+    
+        &__sub-title{
+            font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 158%;
+    text-align: center;
+    color: grey;
+        }
+    
+    
+     &__button{
+    width: 200px;
+    height: 45px;
+        background-color: $button-color;
+        border: 1px solid white;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    
+=======
 @media screen and (min-width: 480px) {
   .box {
     &__title {
@@ -10,6 +54,7 @@
       line-height: 146%;
       text-align: center;
       color: var($second-title);
+>>>>>>> 7ca60046e4770938a642efc4697db53e24b4f046
     }
 
     &__sub-title {
@@ -21,6 +66,91 @@
       color: grey;
     }
 
+<<<<<<< HEAD
+
+    .create{
+   
+        &__list{
+            margin-top: 70px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        &__title{
+            font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+        }
+    
+        &__sub-title{
+            margin-top: 12px;
+            font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 158%;
+    color: grey;
+        }
+        
+        &__wrap{
+    
+          padding-top: 28px;
+        }
+    
+        &__item{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        &__image{
+            padding-right: 40px;
+            width: 110px;
+            height: 110px;
+        }
+    
+        &__button{
+    cursor: pointer;
+      margin-top: 55px;
+      margin-bottom: 105px;
+      margin-left: 750px;
+    width: 200px;
+    height: 45px;
+        background-color: $button-color;
+        border: 1px solid ;
+        color: white;
+    border-radius: 25px;
+    }
+    
+    &__link{
+        color: white;
+        font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    
+    }
+    }
+}
+
+@media screen and (min-width:  1200px) {
+ 
+
+.box{
+
+    &__title{
+
+        margin-top: 100px;
+        margin-bottom: 32px;
+        text-align: center;
+        font-family: 'Montserrat';
+font-weight: 700;
+font-size: 36px;
+line-height: 146%;
+text-align: center;
+       color: var($second-title);
+ 
+
+=======
     &__button {
       width: 200px;
       height: 45px;
@@ -46,6 +176,7 @@
       line-height: 146%;
       text-align: center;
       color: var($second-title);
+>>>>>>> 7ca60046e4770938a642efc4697db53e24b4f046
     }
 
     &__sub-title {

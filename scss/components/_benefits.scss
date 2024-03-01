@@ -77,3 +77,56 @@
     height: 28px;
   }
 }
+<<<<<<< HEAD
+
+.line{
+    margin-top: 142px;
+    background-color: lightgray;
+width: 1110px;
+height: 1px;
+}
+
+.bottom{
+
+    &__list{
+        flex-wrap: wrap;
+        margin-top: 70px;
+display: flex;
+justify-content: space-evenly;
+    }
+
+    &__item{
+        display: flex;
+    }
+
+    &__title{
+
+        font-family: 'Montserrat';
+font-weight: 400;
+font-size: 36px;
+line-height: 146%;
+color: #000;
+    }
+
+    &__sub-title{
+        position: relative;
+        right: 40px;
+        font-family: 'Montserrat';
+font-weight: 400;
+font-size: 16px;
+line-height: 158%;
+color: grey;
+    }
+
+    &__image{
+        margin-top: 12px;
+        margin-right: 10px;
+        width: 30px;
+        height: 28px;
+    }
+}
+
+
+
+=======
+>>>>>>> 7ca60046e4770938a642efc4697db53e24b4f046
