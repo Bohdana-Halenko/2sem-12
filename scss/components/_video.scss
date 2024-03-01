@@ -1,60 +1,69 @@
-
-// Сонька 
 .video {
-    background-image: url(./img/video/video-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  position: relative;
 }
-
 .video__title {
-    color: $primary-text-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 146%;
-    display: flex;
-    justify-content: center;
-    padding-top: 70px;
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 146%;
+  display: flex;
+  justify-content: center;
 }
-
+.video__background {
+  background-image: url(./../../img/video/video-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 205px;
+  margin-bottom: 271px;
+}
 .video__text {
-    color: $primary-text-color;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 158%;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  color: $primary-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 158%;
+  display: flex;
+  justify-content: center;
 }
-
 .video__mini-film {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 150px;
-    padding-bottom: 85px;
-    border-bottom: 1px solid $text-color;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 191px;
+  padding-left: 40px;
+  padding-right: 39px;
+  padding-bottom: 85px;
+  border-bottom: 1px solid $title-color;
 }
-
-.video {
-    width: 970px;
-    height: 430px;
-    box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
-    border-radius: 10px;
+video {
+  width: 970px;
+  height: 430px;
+  box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
+  border-radius: 10px;
 }
-
 @media screen and (max-width: 767px) {
-    .video {
-        display: none;
-    }
+  .video {
+    display: none;
+  }
 }
-
 @media screen and (max-width: 1199px) {
-    .video {
-        width: 659px;
-        height: 292px;
-    }
-
-    .video__mini-film {
-        top: 70px;
-    }
+  video {
+    width: 659px;
+    height: 292px;
+  }
+  .video__mini-film {
+    top: 191px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video__background {
+    background-image: url(./../../img/video/video-bg.png);
+    padding-bottom: 420px;
+    margin-bottom: 250px;
+  }
+  .video__mini-film {
+    padding-left: 85px;
+    padding-right: 85px;
+    top: 220px;
+  }
 }
