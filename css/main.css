@@ -89,7 +89,7 @@ img {
     background-color: #4078e7;
   }
   .header {
-    background-image: url(./../../img/header/header-bg.jpg);
+    background-image: url(./../img/header/header-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -619,7 +619,7 @@ img {
 }
 
 .video__background {
-  background-image: url(./../../img/video/video-bg.png);
+  background-image: url(./../img/video/video-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 70px;
@@ -670,7 +670,7 @@ video {
 }
 @media screen and (min-width: 1200px) {
   .video__background {
-    background-image: url(./../../img/video/video-bg.png);
+    background-image: url(./../img/video/video-bg.png);
     padding-bottom: 420px;
     margin-bottom: 250px;
   }
