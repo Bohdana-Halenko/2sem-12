@@ -319,21 +319,45 @@
           </div>
         </div>
       </section>
-      <section class="form" id="form__section">
+      <section class="form"
+               id="form__section">
         <div class="container">
           <h2 class="form__title">Підпишіться на нашу розсилку</h2>
           <p class="form__text">
             Корисні статті, акції, новини - отримайте все це зараз!
           </p>
           <form class="form__form">
-            <input
-              class="form__input"
-              type="email"
-              placeholder="Ваш e-mail"
-              required
-            />
-            <button class="form__button" type="submit">Підписатися</button>
+            <input class="form__input"
+                   type="email"
+                   placeholder="Ваш e-mail"
+                   required
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+            <button class="form__button"
+                    form-modal-open
+                    type="submit">
+              Підписатися
+            </button>
           </form>
+          <div class="backdrop is-hidden"
+               form-modal>
+            <div class="modal">
+              <div class="modal__box-close"
+                   form-modal-close>
+                <svg class="modal__icon-close"
+                     width="30"
+                     height="30">
+                  <use href="img/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+              </div>
+              <div class="modal__wrap">
+                <h2 class="form-modal__title">Вітаємо!</h2>
+                <h2 class="form-modal__title">Ви перші будете дізнаватися про новини</h2>
+                <p class="form-modal__text">
+                  Дякуємо за вашу довіру!
+                </p>
+              </div>
+            </div>
+          </div>
           <p class="form__text-join">
             Ми не шлем спам, і не передаємо нікому ваші дані
           </p>
@@ -490,5 +514,6 @@
         </div>
       </div>
     </footer>
+        <script src="js/form-modal.js"></script>
   </body>
 </html>
