@@ -8,3 +8,17 @@
     height: 20px;
     fill: $text-color;
 }
+.footer__item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 158%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__sub-title{
+    color: $SecondaryTextColor;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
