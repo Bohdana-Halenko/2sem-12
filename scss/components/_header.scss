@@ -1,5 +1,68 @@
 // великий хедер Давід
 
+
+.header__list {
+  content: "";
+  order: 1;
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: flex-end;
+}
+.header__nav {
+  order: 1;
+  border-bottom: 1px solid  #a1a1a1;
+}
+.header__link {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 40px;
+  &:hover{
+      color: #dadada;
+  }
+}
+.header__button {
+  background-color: $button-color;
+  border-radius: 30px;
+  width: 200px;
+  height: 45px;
+  border: none;
+  color: $primary-text-color;
+  margin: 0 auto;
+  margin-top: 50px;
+  cursor: pointer;
+  &:hover{
+      background-color: #4078e7;
+  }
+}
+.header{
+  background-image: url(./../img/header/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 335px;
+  font-family: "Montserrat", sans-serif;
+}
+.header__text {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: $primary-text-color;
+  margin-top: 220px;
+}
+.header__title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 134%;
+  text-align: center;
+  color: $primary-text-color;
+  margin-top: 20px;
+}
+.header__button-wrap{
+  display: flex;
+  justify-content: center;
+}
 @media screen and (min-width: 1200px) {
   .header__list {
     content: "";
