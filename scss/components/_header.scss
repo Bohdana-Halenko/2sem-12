@@ -1,5 +1,167 @@
 // великий хедер Давід
 
+.menu-container { 
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+  padding: 48px 40px; 
+  width: 100%; 
+  height: 100vh; 
+  background-color: $primary-background-color; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 
+    0px 1px 3px rgba(0, 0, 0, 0.16); 
+  z-index: 999; 
+  transform: translateX(100%); 
+  transition-duration: 250ms; 
+} 
+ 
+.mobile-menu { 
+  @media (min-width: 768px) { 
+    display: none; 
+  } 
+} 
+ 
+.menu-container.is-open { 
+  transform: translateX(0%); 
+} 
+ 
+.menu-button { 
+  position: absolute; 
+  align-items: center; 
+  justify-content: center; 
+  top: 10px; 
+  right: 2px; 
+  margin: 0; 
+  background-color: transparent; 
+  cursor: pointer; 
+  border: none; 
+  outline: none; 
+ 
+  @media (max-width: 767px) { 
+    .navigation, 
+    .site-nav { 
+      display: none; 
+    } 
+  } 
+ 
+  @media (min-width: 768px) { 
+    display: none; 
+  } 
+} 
+ 
+.menu-button__open { 
+  padding: 0; 
+  background-color: transparent; 
+  margin-left: auto; 
+  border: none; 
+  cursor: pointer; 
+} 
+.menu-button__close { 
+  position: absolute; 
+  top: 10px; 
+  right: 15px; 
+  padding: 0; 
+  margin-left: auto; 
+  border: none; 
+  cursor: pointer; 
+} 
+ 
+.icon-menu, 
+.icon-close { 
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  .menu-button:hover &, 
+  .menu-button:focus & { 
+    fill: $background-button-color; 
+  } 
+} 
+ 
+​.menu-button__close, 
+.menu-button__open { 
+  fill: gray; 
+  transition-duration: 250ms; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  background-color: lightgrey; 
+} 
+ 
+.menu-button__close:active, 
+.menu-button__open:active { 
+  color: $background-button-color; 
+} 
+.menu-box { 
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+  width: 100%; 
+  justify-content: space-between; 
+} 
+
+
+
+
+
+.header__list {
+  content: "";
+  order: 1;
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+.header__nav {
+  order: 1;
+  border-bottom: 1px solid  #a1a1a1;
+}
+.header__link {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 40px;
+  &:hover{
+      color: #dadada;
+  }
+}
+.header__button {
+  background-color: $button-color;
+  border-radius: 30px;
+  width: 200px;
+  height: 45px;
+  border: none;
+  color: $primary-text-color;
+  margin: 0 auto;
+  margin-top: 50px;
+  cursor: pointer;
+  &:hover{
+      background-color: #4078e7;
+  }
+}
+.header{
+  background-image: url(./../img/header/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 335px;
+  font-family: "Montserrat", sans-serif;
+}
+.header__text {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: $primary-text-color;
+  margin-top: 220px;
+}
+.header__title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 134%;
+  text-align: center;
+  color: $primary-text-color;
+  margin-top: 20px;
+}
+.header__button-wrap{
+  display: flex;
+  justify-content: center;
+}
 @media screen and (min-width: 1200px) {
   .header__list {
     content: "";
@@ -36,7 +198,7 @@
     }
   }
   .header{
-    background-image: url(./../../img/header/header-bg.jpg);
+    background-image: url(./../img/header/header-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
