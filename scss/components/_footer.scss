@@ -17,8 +17,12 @@
     align-items: center;
 }
 .footer__sub-title{
-    color: $SecondaryTextColor;
+    color: $second-title;
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 2px;
+}
+.footer__wraper{
+    display: flex;
+    justify-content: space-between;
 }
