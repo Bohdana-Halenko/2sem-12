@@ -549,18 +549,15 @@ img {
 @media screen and (min-width: 480px) {
   .standard {
     display: flex;
+    justify-content: space-between;
   }
   .standard__title {
     font-family: "Montserrat";
     font-size: 24px;
     line-height: 146%;
     color: black;
-    margin-left: 78px;
   }
   .standard__sub-title {
-    margin-left: 72px;
-    margin-top: 20px;
-    margin-bottom: 42px;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 16px;
@@ -568,15 +565,11 @@ img {
     color: grey;
   }
   .standard__image {
-    margin-top: 152px;
-    margin-left: 68px;
     width: 352px;
     height: 282px;
     border-radius: 20px;
-    display: flex;
   }
   .standard__link {
-    margin-left: 72px;
     cursor: pointer;
     color: blue;
   }
@@ -614,12 +607,6 @@ img {
     line-height: 158%;
     color: grey;
   }
-  .bottom__image {
-    margin-top: 12px;
-    margin-right: 10px;
-    width: 30px;
-    height: 28px;
-  }
   .line {
     margin-top: 142px;
     background-color: lightgray;
@@ -651,12 +638,6 @@ img {
     line-height: 158%;
     color: grey;
   }
-  .bottom__image {
-    margin-top: 12px;
-    margin-right: 10px;
-    width: 30px;
-    height: 28px;
-  }
 }
 @media screen and (min-width: 768px) {
   .standard {
@@ -670,7 +651,6 @@ img {
     color: black;
   }
   .standard__sub-title {
-    width: 355px;
     margin-top: 20px;
     margin-bottom: 42px;
     font-family: "Montserrat";
@@ -680,18 +660,9 @@ img {
     color: grey;
   }
   .standard__image {
-    margin-top: 52px;
-    margin-left: 328px;
-    width: 352px;
-    height: 282px;
+    width: 500px;
+    height: 400px;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  .standard__second {
-    position: relative;
-    bottom: 250px;
-    right: 48px;
   }
   .standard__link {
     margin-top: 20px;
@@ -787,7 +758,6 @@ img {
     display: flex;
   }
   .standard__title {
-    margin-top: 152px;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 36px;
@@ -804,12 +774,18 @@ img {
     color: grey;
   }
   .standard__image {
+<<<<<<< HEAD
     position: relative;
     left: 280px;
     top: 280px;
     border-radius: 30px;
     width: 500px;
     height: 400px;
+=======
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+>>>>>>> 405512d8cff5a32f89b78c0a487bb4438b5dddaf
   }
   .standard__link {
     cursor: pointer;
@@ -1315,8 +1291,20 @@ video {
 }
 
 .footer__sub-title {
+<<<<<<< HEAD
   color: va #fff;
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 2px;
+=======
+  color: rgba(50, 50, 50, 0.1960784314);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.footer__wraper {
+  display: flex;
+  justify-content: space-between;
+>>>>>>> 405512d8cff5a32f89b78c0a487bb4438b5dddaf
 }/*# sourceMappingURL=main.css.map */
