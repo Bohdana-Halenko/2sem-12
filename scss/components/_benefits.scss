@@ -59,12 +59,7 @@
       display: flex;
     }
   
-    &__item:nth-child(4){
-      margin-top: 20px;
-    }
-    &__item:nth-child(5){
-      margin-top: 20px;
-    }
+
   
     &__title {
       font-family: "Montserrat";
@@ -296,6 +291,8 @@ color: var(--accent);
 
 .standard {
   display: flex;
+
+
   &__title {
     margin-top: 152px;
     font-family: "Montserrat";
@@ -316,13 +313,12 @@ color: var(--accent);
   }
 
   &__image {
-    margin-top: 152px;
-    margin-left: 121px;
-    width: 352px;
-    height: 282px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    left: 280px;
+    top: 280px;
+    border-radius: 30px;
+    width: 500px;
+    height: 400px;
   }
 
   &__link {
@@ -332,12 +328,13 @@ color: var(--accent);
 }
 
 .line {
-  margin-top: 142px;
+  
   border: 1px solid lightgray;
   width: 1110px;
   height: 0px;
   position: relative;
   right: 50px;
+  
 }
 
 .bottom {
